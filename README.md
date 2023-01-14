@@ -404,7 +404,7 @@ Hint:
 > - Who is EVE? Hackers always do their research!  
 > - Function robots for web? I don't know, make some research dude!  
 
-Given is the link to a website. Based on the hint, this challenge use robots.txt. put robots.txt in the directory as such:  
+Given is the link to a website. Based on the hint, this challenge uses `robots.txt`. Put `robots.txt` in the directory as such:  
 ```
 https://eliteghost.tech/wall-e/robots.txt  
 ```  
