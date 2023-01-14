@@ -68,15 +68,87 @@ In this event, I managed to get 4th place. I have learned a lot during this even
 ---------------------------------------------------------------------------
 ## Programming
 ### [Rigorous]
-![Rigorous Question](https://github.com/mzahiruliman/EliteGhost-CTF-2023/blob/main/Rigorous/image_2023-01-14_140625399.png?raw=true)  
+![Rigorous Question](https://github.com/mzahiruliman/EliteGhost-CTF-2023/blob/main/Rigorous/RigorousQues.png?raw=true)  
 | Files         |
 | ------------- |
 | [flag.zip](https://github.com/mzahiruliman/EliteGhost-CTF-2023/raw/main/Rigorous/flag.zip)      |
 
+Hint:
+> - What is the value of f(x) = sin(x^2 + 1) + 1 ?  
+> - Malicious code designed to execute under circumstances I've programmed!  
+> - No Arithmetic Operation required..  
+> - Useless Regex Expressions! This challenges tricked my brain well!  
+> - value of f(x) = sin(x^2 + 1) + 1 is 1. Therefore, its an arrangement for a malicious “code” to executed under circumstances i’ve programmed.  
+> - Execution with data outside 33-126 Range.  
+
+After extracting the zip file, there will be 4 text files:  
+    ![Extracted](https://github.com/mzahiruliman/EliteGhost-CTF-2023/blob/main/Rigorous/Extracted%20zip%20file.png?raw=true)  
+    
+Formula.txt:  
+```
+apk: f(x) = sin(x^2 + 1) + 1
+ipa: 2
+exe: 3
+osx: 4
+```  
+[^a-zA-Z0-9_].apk.txt:  
+```
+^(\\S+)\\s+(\\S+)$ || D'`;M#8n<;G3zx6Te@,PqMo:n%*#(4hffBA.~}+{)9rqvutsl2pohPle+ihJIedcb[!_^@VUTYRQPtTSRQ3ONGkjW
+```
+[^a-zA-Z0-9_].ipa.txt:  
+```
+^(\\S+)\\s+(\\S+)$ || D'``_9"n[HX9ih6fe3,sN)LoJ87jGX~DeASc~a_N):rqvutsl2johgfkjc)gIH^]\"`_A@\Uy<;QPt76LpP2NMLKDhHGF?>bO
+```
+[^a-zA-Z0-9_].exe.txt:  
+```
+^(\\S+)\\s+(\\S+)$ || D'`%_9"=[l:{8VC54uQ>0).:]%$ki!g21{"cx}O<)srwp6tsrkpongf,jiKgf_%F\[`_^]VzZ<;WVOsMRQJnH0LEJCBf)?DC<;_L
+```
+[^a-zA-Z0-9_].osx.txt:  
+```
+^(\\S+)\\s+(\\S+)$ || D'`N@9>~ZZXXyV6Tuu2rNM;:&+H6GiWfBTzcaP|N)y[wpunsl2pohglkjiba'edFb[!_^@?UTxRQPOTSLpP2NMLEDhU
+```
+Since f(x) = sin(x^2 + 1) + 1 is 1, this means that the contents of formula.txt defines the arrangement of the content in all the files.  
+
+The hint also tells that the Regex expressions is useless. All the files have `^(\\S+)\\s+(\\S+)$ ||` at the very first of the value. So maybe this is useless. Remove them and you get:  
+```
+D'`;M#8n<;G3zx6Te@,PqMo:n%*#(4hffBA.~}+{)9rqvutsl2pohPle+ihJIedcb[!_^@VUTYRQPtTSRQ3ONGkjW  
+D'``_9"n[HX9ih6fe3,sN)LoJ87jGX~DeASc~a_N):rqvutsl2johgfkjc)gIH^]\"`_A@\Uy<;QPt76LpP2NMLKDhHGF?>bO  
+D'`%_9"=[l:{8VC54uQ>0).:]%$ki!g21{"cx}O<)srwp6tsrkpongf,jiKgf_%F\[`_^]VzZ<;WVOsMRQJnH0LEJCBf)?DC<;_L  
+D'`N@9>~ZZXXyV6Tuu2rNM;:&+H6GiWfBTzcaP|N)y[wpunsl2pohglkjiba'edFb[!_^@?UTxRQPOTSLpP2NMLEDhU
+```  
+
+The hint also tells something about Execution with data outside 33-126 Range. I googled up and found about [Malbolge compiler.](https://malbolge.doleczek.pl) I tried to compile all of them at once, but failed. Then, I tried to compile according to their sequence and got base64 values:  
+```
+RUd7TTRMQjBMRzNfMVNfSDRSRH0=
+```  
+After that, I decoded using [base64 decoder](https://www.base64decode.org) and got the flag:  
+```
+EG{M4LB0LG3_1S_H4RD}
+```
+
 ---------------------------------------------------------------------------
 ## Cryptography
-### WASD
-### Cartoon
+### [WASD]  
+![WASD](https://github.com/mzahiruliman/EliteGhost-CTF-2023/blob/main/WASD/WASD.png?raw=true)  
+|Files|
+|-----|
+|[flag.txt](WASD/flag.txt)  
+
+Hint:  
+```
+What is meant by fat-finger problem?
+```  
+The content of flag.txt file is:  
+```
+WFPA2XE2R)X9S2{
+```   
+The hint tells something about fat-finger problem. Whenever people have fat fingers, they tend to **"shift"** a little bit when pressing the **"keyboard"**. After googling, I found out that the flag is encypted using keyboard shift cipher. Decrypt using [Keyboard Shift Cipher](https://www.dcode.fr/keyboard-shift-cipher), use the power of `Ctrl+F` and you found:  
+```
+EG{S3CR3T_C0D3}
+```   
+
+### [Cartoon]  
+
 ### DoReMi
 ### NATO
 ### Doraemon
