@@ -396,7 +396,31 @@ flag:
 EG{G1nZ_1s_H3r3}
 ```   
 
-### EVE
+### EVE  
+![EVEques](https://github.com/mzahiruliman/EliteGhost-CTF-2023/blob/main/EVE/EVE.png?raw=true)  
+
+Hint:  
+> - Don't be fooled with the source! The clue already related on what's in front of your eyes  
+> - Who is EVE? Hackers always do their research!  
+> - Function robots for web? I don't know, make some research dude!  
+
+Given is the link to a website. Based on the hint, this challenge use robots.txt. put robots.txt in the directory as such:  
+```
+https://eliteghost.tech/wall-e/robots.txt  
+```  
+You will see lots of directory. Find unusual directory and you will found `czNjcjN0MTMzNw==`. Decode the base64 format using [Base64 Decoder](https://www.base64decode.org) and you will get `s3cr3t1337`. Put the decoded string into the initial directory like this:  
+```
+https://eliteghost.tech/wall-e/s3cr3t1337/
+```  
+You will see nothing at first. Try to inspect elements and a base64 format string will appear as below:  
+![wow](https://github.com/mzahiruliman/EliteGhost-CTF-2023/blob/main/EVE/image_2023-01-14_192134918.png?raw=true)  
+Decode the string using the same decoder and you will see the flag:  
+```
+EG{R0B0tS_W1tH_B64_Wa5_So_FXN_R1GHT}
+```  
+
+
+
 ### Error 404
 ### TutTut
 ### Birthday
