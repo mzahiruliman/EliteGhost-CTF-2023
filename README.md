@@ -367,8 +367,35 @@ EG{H4X0R}
 
 ---------------------------------------------------------------------------
 ## Web
-### Japan
-### Error 500
+### [Japan]  
+![JapanQues](https://github.com/mzahiruliman/EliteGhost-CTF-2023/blob/main/Japan/Japan.png?raw=true)  
+
+|Files|
+|-----|
+|[admin-sign.pdf](https://github.com/mzahiruliman/EliteGhost-CTF-2023/raw/main/Japan/admin-sign.pdf)|  
+
+Hint: No hint.  
+
+Go to [who.is](https://who.is) and put jprs.jp. You will get the signing key:  
+![sign-key](https://github.com/mzahiruliman/EliteGhost-CTF-2023/blob/main/Japan/image_2023-01-14_185836272.png?raw=true)  
+
+Use the key to unlock the protected admin-sign.pdf and there is the flag!:  
+```
+EG{WH01S_L00KUP_1S_34SY}
+```  
+
+### Error 500  
+![Error505Ques](https://github.com/mzahiruliman/EliteGhost-CTF-2023/blob/main/Error%20505/image_2023-01-14_190535209.png?raw=true)  
+
+Given in the question is the link to a website. Click the link. Inspect element (Ctrl + Shift + I) observe the script and you will find the flag:  
+
+![flag](https://github.com/mzahiruliman/EliteGhost-CTF-2023/blob/main/Error%20505/image_2023-01-14_190730060.png?raw=true)  
+
+flag:  
+```
+EG{G1nZ_1s_H3r3}
+```   
+
 ### EVE
 ### Error 404
 ### TutTut
