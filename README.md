@@ -214,9 +214,82 @@ EG{DORABELLACHPHER}
 ---------------------------------------------------------------------------
 ## Reverse Engineering
 ### [OldButGold]  
-![OldButGoldQues](https://github.com/mzahiruliman/EliteGhost-CTF-2023/blob/main/OldButGold/OldButGold.png?raw=true)
-### Diamond
-### Vault
+![OldButGoldQues](https://github.com/mzahiruliman/EliteGhost-CTF-2023/blob/main/OldButGold/OldButGold.png?raw=true)  
+
+|Files|
+|-----|
+|[65YearsAgo.txt](OldButGold/65YearsAgo.txt)|  
+
+Hint:  
+> Asc  
+
+The hint tells that the flag value in 65YearsAgo.txt is actually in ASCII format. In the text file, there are number sequences:  
+```
+51, 76, 49, 84, 51, 71, 72, 48, 83, 84, 95, 52, 67, 52, 68, 51, 77, 89
+```  
+Decrypt the ASCII code using the [ASCII Converter](https://www.dcode.fr/ascii-code) and you will get the flag:  
+```
+EG{3L1T3GH0ST_4C4D3MY}
+```  
+
+### [Diamond]  
+![DiamondQues](https://github.com/mzahiruliman/EliteGhost-CTF-2023/blob/main/Diamond/Diamond.png?raw=true)  
+
+|Files|
+|-----|
+|[flag.rb](Diamond/flag.rb)  
+
+Hint:  
+> - Ever heard about encryption?
+> - R**13 Cipher!  
+
+The files given is a ruby file. The hint mentioned about ROT13 Cipher, and there are lines of codes defining that some value need to be decoded using ROT13 Cipher:  
+```
+def c(p)
+    e = "F0_gu1f_1f_e0g13_J3yp0zr"
+    d = rot13(e)
+    if p == d
+      puts "Correct password, here's your flag! : EG{#{d}}"
+    else
+      puts "Wrong password"
+    end
+  end
+```  
+Decrypt the value using [ROT13 Cipher Decryptor](https://www.dcode.fr/rot-13-cipher) and you will get the flag:  
+```
+EG{S0_th1s_1s_r0t13_W3lc0me}
+```  
+
+### [Vault]  
+![VaultQues](https://github.com/mzahiruliman/EliteGhost-CTF-2023/blob/main/Vault/Vault.png?raw=true)  
+
+|Files|
+|-----|
+|[passcode.txt](Vault/passcode.txt)|
+|[vault.zip](Vault/vault.zip)|  
+
+Hint: No hint.  
+
+The question is straightforward. The passcode.txt provide lines of code that I believe to be in Python programming language. Paste the code in [Python online compiler](https://www.onlinegdb.com/online_python_compiler#) and put print() function:  
+```
+x = 1337
+y = x % 882726
+z = int(str(y)[::-1])
+a = z * y
+g = x + y + z + a
+passcode = (x + g + y + z + a) * 2
+
+print(passcode)
+```  
+You will get 8 digits number:  
+```
+39246208
+```  
+Use the password to unlock the vault.zip file and you will get the flag:  
+```
+EG{M4THS_1S_FUN}
+```  
+
 ### [Complexity]  
 ![ComplexityQues](https://github.com/mzahiruliman/EliteGhost-CTF-2023/blob/main/Complexity/Complexity.png?raw=true)  
 
@@ -246,7 +319,52 @@ EG{TH3R3_1S_4LW4YS_FL4W}
 ```
 
 
-### Ordered
+### [Ordered]
+![OrderedQues](https://github.com/mzahiruliman/EliteGhost-CTF-2023/blob/main/Ordered/Ordered.png?raw=true)  
+
+|Files|
+|-----|
+|[flag.cpp](Ordered/flag.cpp)|  
+
+Hint:  
+> A B C D E..  
+
+Given the code from flag.cpp:  
+```
+#include <iostream>
+
+int main() {
+    char A = 1 + 0;
+    char E = H + 5;
+    char B = E + 2;
+    char J = "}" + 10;
+    char F = 4 + 6;
+    char I = R + 9;
+    char D = "{" + 4;
+    char G = X + 7;
+    char C = G + 3;
+    char H = 0 + 8;
+    char FLAG = "?";
+    }
+```
+Based on the hint, arrange according to its alphabetical order and you will get:  
+```
+char A = 1 + 0;
+char B = E + 2;
+char C = G + 3;
+char D = "{" + 4;
+char E = H + 5;
+char F = 4 + 6;
+char G = X + 7;
+char H = 0 + 8;
+char I = R + 9;
+char J = "}" + 10;
+```  
+Flag:  
+```
+EG{H4X0R}
+```
+
 ---------------------------------------------------------------------------
 ## Web
 ### Japan
