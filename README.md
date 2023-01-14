@@ -69,7 +69,9 @@ In this event, I managed to get 4th place. I have learned a lot during this even
 ## Programming
 ### [Rigorous]
 ![Rigorous Question](https://github.com/mzahiruliman/EliteGhost-CTF-2023/blob/main/Rigorous/image_2023-01-14_140625399.png?raw=true)  
-Attach with the question is [flag.zip](https://github.com/mzahiruliman/EliteGhost-CTF-2023/raw/main/Rigorous/flag.zip)
+| Files         |
+| ------------- |
+| [flag.zip](https://github.com/mzahiruliman/EliteGhost-CTF-2023/raw/main/Rigorous/flag.zip)      |
 
 ---------------------------------------------------------------------------
 ## Cryptography
