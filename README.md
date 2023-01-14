@@ -200,7 +200,7 @@ EG{ROGERTHATSIR}
 ![DoraemonQues](https://github.com/mzahiruliman/EliteGhost-CTF-2023/blob/main/Doraemon/Doraemon.png?raw=true)  
 
 File:  
-[DoraBella font](https://github.com/mzahiruliman/EliteGhost-CTF-2023/blob/main/Doraemon/flag.png?raw=true)  
+![DoraBella font](https://github.com/mzahiruliman/EliteGhost-CTF-2023/blob/main/Doraemon/flag.png?raw=true)  
 
 Hint:  
 > Dora + Fingerlings Tales(Name cartoon) Cipher!
