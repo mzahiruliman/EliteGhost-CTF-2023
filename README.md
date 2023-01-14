@@ -148,7 +148,7 @@ EG{S3CR3T_C0D3}
 ```   
 
 ### [Cartoon]  
-
+![Cartoon](https://github.com/mzahiruliman/EliteGhost-CTF-2023/blob/main/Cartoon/Cartoon.png?raw=true)
 ### DoReMi
 ### NATO
 ### Doraemon
