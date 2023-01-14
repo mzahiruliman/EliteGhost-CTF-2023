@@ -27,11 +27,11 @@ In this event, I managed to get 4th place. I have learned a lot during this even
   - [Ordered](#Ordered)  
   
 ---------------------------------------------------------------------------
-
 ## Programming
-### Rigorous
-
+### [Rigorous]
+---------------------------------------------------------------------------
 ## Cryptography
+---------------------------------------------------------------------------
 ### WASD
 ### Cartoon
 ### DoReMi
