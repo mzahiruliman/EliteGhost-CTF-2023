@@ -298,8 +298,8 @@ EG{M4THS_1S_FUN}
 |[NonSense.java](Complexity/NonSense.java)|  
 
 Hint:  
-> Step one, identify the target.
-> Step 1, identify the target and the “FLAW”.  
+> - Step one, identify the target.
+> - Step 1, identify the target and the “FLAW”.  
 
 The files provided consists of thousand of lines of Java code. The hint tell us to idemtify the target and the flaw. I think that the target here is the flag, and the flaw is the flaw in the code. I go through the code and found something:  
 ```
@@ -313,7 +313,7 @@ The string `REZ7U0czUTNfMVJfNEtWNFhSX0VLNFZ9` is an encoded base64 format. I dec
 ```
 DF{SG3Q3_1R_4KV4XR_EK4V}
 ```  
-The flaw that I found was difinitely the right one. Then I used [Shift Cipher Decryptor](https://www.dcode.fr/shift-cipher) to decrypt again until I got the flag:  
+The flaw that I found was definitely the right one. Then I used [Shift Cipher Decryptor](https://www.dcode.fr/shift-cipher) to decrypt again until I got the flag:  
 ```
 EG{TH3R3_1S_4LW4YS_FL4W}
 ```
