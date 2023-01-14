@@ -17,9 +17,9 @@ In this event, I managed to get 4th place. I have learned a lot during this even
   - [DoReMi](#DoReMi)
   - [NATO](#NATO)
   - [Doraemon](#Doraemon)
-<!-- - [Super Secured Encryption](#Super Secured Encryption) -->
+<!-- - [Super Secured Encryption](#Super-Secured-Encryption) -->
   
-- [Reverse Engineering](#Reverse Engineering)
+- [Reverse Engineering](#Reverse-Engineering)
   - [OldButGold](#OldButGold)
   - [Diamond](#Diamond)
   - [Vault](#Vault)
