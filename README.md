@@ -1,12 +1,32 @@
-# __EliteGhost-CTF-2023__
+---------------------------------------------------------------------------
+# __EliteGhost-CTF-2023__  
+---------------------------------------------------------------------------
 
 EGCTF2023 is a puzzle-based, three-days Capture The Flag (CTF) challenge consists of 50 questions from multiple categories, organized by a community called Elite Ghost. This repository is about providing writeups on challenges that have been done by me (@BiskutIkatTepi)  
 
-In this event, I managed to get 4th place. I have learned a lot during this event and would like to join other CTF challenges in the future.
+In this event, I managed to get 4th place. I have learned a lot during this event and would like to join other CTF challenges in the future.  
 
+---------------------------------------------------------------------------
 ## __Table of Contents__
 - [**Programming**](#Programming)
   - [Rigorous](#Rigorous)
+
+- [Cryptography](#Cryptography)
+  - [WASD](#WASD)
+  - [Cartoon](#Cartoon)
+  - [DoReMi](#DoReMi)
+  - [NATO](#NATO)
+  - [Doraemon](#Doraemon)
+<!-- - [Super Secured Encryption](#Super Secured Encryption) -->
+  
+- [Reverse Engineering](#Reverse Engineering)
+  - [OldButGold](#OldButGold)
+  - [Diamond](#Diamond)
+  - [Vault](#Vault)
+  - [Complexity](#Complexity)
+  - [Ordered](#Ordered)  
+  
+---------------------------------------------------------------------------
 
 ## Programming
 ### Rigorous
