@@ -301,7 +301,7 @@ Hint:
 > - Step one, identify the target.
 > - Step 1, identify the target and the “FLAW”.  
 
-The files provided consists of thousand of lines of Java code. The hint tell us to idemtify the target and the flaw. I think that the target here is the flag, and the flaw is the flaw in the code. I go through the code and found something:  
+The files provided consists of thousand of lines of Java code. The hint tell us to identify the target and the flaw. I think that the target here is the flag, and the flaw is the flaw in the code. I go through the code and found something:  
 ```
 private static void Flaw(String logicBomb){
           System.out.println("The feeling that never gets old");
