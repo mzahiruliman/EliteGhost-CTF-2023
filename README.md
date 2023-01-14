@@ -5,7 +5,8 @@ EGCTF2023 is a puzzle-based, three-days Capture The Flag (CTF) challenge consist
 In this event, I managed to get 4th place. I have learned a lot during this event and would like to join other CTF challenges in the future.
 
 ## __Table of Contents__
-- [Programming](#Programming)
+- [**Programming**](#Programming)
+  - [Rigorous](#Rigorous)
 
 ## Programming
 ### Rigorous
