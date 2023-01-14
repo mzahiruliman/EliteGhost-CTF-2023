@@ -132,25 +132,70 @@ EG{M4LB0LG3_1S_H4RD}
 ![WASD](https://github.com/mzahiruliman/EliteGhost-CTF-2023/blob/main/WASD/WASD.png?raw=true)  
 |Files|
 |-----|
-|[flag.txt](WASD/flag.txt)  
+|[flag.txt](WASD/flag.txt)|  
 
 Hint:  
-```
-What is meant by fat-finger problem?
-```  
+> What is meant by fat-finger problem?
+
 The content of flag.txt file is:  
 ```
 WFPA2XE2R)X9S2{
 ```   
-The hint tells something about fat-finger problem. Whenever people have fat fingers, they tend to **"shift"** a little bit when pressing the **"keyboard"**. After googling, I found out that the flag is encypted using keyboard shift cipher. Decrypt using [Keyboard Shift Cipher](https://www.dcode.fr/keyboard-shift-cipher), use the power of `Ctrl+F` and you found:  
+The hint tells something about fat-finger problem. Whenever people have fat fingers, they tend to **"shift"** a little bit when pressing the **"keyboard"**. After googling, I found out that the flag is encypted using keyboard shift cipher. Decrypt using [Keyboard Shift Cipher Decryptor](https://www.dcode.fr/keyboard-shift-cipher), use the power of `Ctrl+F` and you found:  
 ```
 EG{S3CR3T_C0D3}
 ```   
 
 ### [Cartoon]  
-![Cartoon](https://github.com/mzahiruliman/EliteGhost-CTF-2023/blob/main/Cartoon/Cartoon.png?raw=true)
-### DoReMi
-### NATO
+![Cartoon](https://github.com/mzahiruliman/EliteGhost-CTF-2023/blob/main/Cartoon/Cartoon.png?raw=true)  
+
+|Files|
+|-----|
+|[flag.png](Cartoon/flag.png)|  
+
+The file given is an image file:  
+![image](https://github.com/mzahiruliman/EliteGhost-CTF-2023/blob/main/Cartoon/image_2023-01-14_162028939.png?raw=true)  
+
+Hint:  
+> - Doodle man!  
+
+By looking at the hint, and some googling, I found that it is a unique font called Dancing Men Cipher. I used the [Dancing Men Cipher Decryptor](https://www.dcode.fr/dancing-men-cipher) and got the flag:  
+```
+EG{UNBELIEVABLECIPHER}  
+```   
+
+### [DoReMi]  
+![DoReMi](https://github.com/mzahiruliman/EliteGhost-CTF-2023/blob/main/DoReMi/Doremi.png?raw=true)  
+
+File:  
+![Lagu](https://github.com/mzahiruliman/EliteGhost-CTF-2023/blob/main/DoReMi/flaggg.jpg?raw=true)  
+
+Hint:
+> Music? Cipher?  
+
+When I look at flaggg.jpg, at first I thought it was a direct translation of the music notes. However, after I look at the hint, I know that it was again a type of cipher which is Music Sheet Cipher. I decrypt using [Music Sheet Cipher Decryptor](https://www.dcode.fr/music-sheet-cipher) and able to get the flag:  
+```
+EG{IFMUSICWASINCODE}
+```  
+
+### [NATO]
+![NATO](https://github.com/mzahiruliman/EliteGhost-CTF-2023/blob/main/NATO/NATO.png?raw=true)  
+|Files|
+|-----|
+|[flag.txt](NATO/flag.txt)|  
+
+The content of flag.txt is:  
+```
+EG{Romeo Oscar Golf Echo Romeo Tango Hotel Alpha Tango Sierra India Romeo}
+```  
+The question mentioned about NATO phoetic alphabet. I googled and found this:  
+![NATO](https://github.com/mzahiruliman/EliteGhost-CTF-2023/blob/main/NATO/ABC_Chart.jpg?raw=true)  
+
+It is actually a direct question. Just follow the chart and you will get the flag:  
+```
+EG{ROGERTHATSIR}
+```  
+
 ### Doraemon
 <!-- ###Super Secured Encryption -->
 ---------------------------------------------------------------------------
