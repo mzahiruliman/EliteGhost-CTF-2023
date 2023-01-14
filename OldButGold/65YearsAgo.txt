@@ -1,0 +1,42 @@
+subroutine check_password(input, result)
+  implicit none
+  character(len=*), intent(in) :: input
+  logical, intent(out) :: result
+ 
+  integer, parameter :: defcon(18) = [51, 76, 49, 84, 51, 71, 72, 48, 83, 84, 95, 52, 67, 52, 68, 51, 77, 89]
+  character(len=1) :: input_char
+  integer :: input_char_code
+  logical :: correct
+  
+  correct = .true.
+  do i = 1, len(input)
+    input_char = input(i:i)
+    input_char_code = int(input_char)
+    if (input_char_code - defcon(i)).abs /= 1 then
+      correct = .false.
+      exit
+    end if
+  end do
+  result = correct
+end subroutine check_password
+
+program test
+  implicit none
+  
+  character(len=*), parameter :: password_prompt = "Enter password:"
+  character(len=*), parameter :: defconx = "Now that's the flag! Put it with EG{}"
+  character(len=*), parameter :: incorrect_message = "Incorrect password."
+  character(len=*), parameter :: password
+  logical :: is_correct
+  
+  write(*,*) password_prompt
+  read(*,*) password
+  
+  call check_password(password, is_correct)
+  
+  if (is_correct) then
+    write(*,*) defconx
+  else
+    write(*,*) incorrect_message
+  end if
+end program test
