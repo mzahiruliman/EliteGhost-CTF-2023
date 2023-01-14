@@ -213,7 +213,8 @@ EG{DORABELLACHPHER}
 <!-- ###Super Secured Encryption -->
 ---------------------------------------------------------------------------
 ## Reverse Engineering
-### OldButGold
+### [OldButGold]  
+![OldButGoldQues](https://github.com/mzahiruliman/EliteGhost-CTF-2023/blob/main/OldButGold/OldButGold.png?raw=true)
 ### Diamond
 ### Vault
 ### [Complexity]  
