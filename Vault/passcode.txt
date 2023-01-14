@@ -1,0 +1,6 @@
+x = 1337
+y = x % 882726
+z = int(str(y)[::-1])
+a = z * y
+g = x + y + z + a
+passcode = (x + g + y + z + a) * 2
