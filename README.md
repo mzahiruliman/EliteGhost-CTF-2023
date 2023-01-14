@@ -159,7 +159,7 @@ The file given is an image file:
 Hint:  
 > - Doodle man!  
 
-By looking at the hint, and some googling, I found that it is a unique font called Dancing Men Cipher. I used the [Dancing Men Cipher Decryptor](https://www.dcode.fr/dancing-men-cipher) and got the flag:  
+By looking at the hint, and some googling, I found that it is a unique font called Dancing Men. I used the [Dancing Men Cipher Decryptor](https://www.dcode.fr/dancing-men-cipher) and got the flag:  
 ```
 EG{UNBELIEVABLECIPHER}  
 ```   
@@ -173,7 +173,7 @@ File:
 Hint:
 > Music? Cipher?  
 
-When I look at flaggg.jpg, at first I thought it was a direct translation of the music notes. However, after I look at the hint, I know that it was again a type of cipher which is Music Sheet Cipher. I decrypt using [Music Sheet Cipher Decryptor](https://www.dcode.fr/music-sheet-cipher) and able to get the flag:  
+When I look at flaggg.jpg, at first I thought it was a direct translation of the music notes. However, after I look at the hint, I know that it was again a type of cipher which is Music Sheet Cipher (Fyi, only decrypt the music notes on top). After decrypting using [Music Sheet Cipher Decryptor](https://www.dcode.fr/music-sheet-cipher) and able to get the flag:  
 ```
 EG{IFMUSICWASINCODE}
 ```  
