@@ -46,14 +46,14 @@ In this event, I managed to get 4th place. I have learned a lot during this even
   - [Class](#Class)
   - [GustaveCourbet](#GustaveCourbet)
   
-- [**OSINT**](#OSINT)
+<!-- - [**OSINT**](#OSINT)
   - [Farewell](#Farewell)
   - [Broken Man](#Broken-Man)
   - [Octopus](#Octopus)
   - [Oldest Historical Tree](#Oldest-Historical-Tree)
   - [Thirsty](#Thirsty)
   - [SixSenses](#SixSenses)
-  
+ --> 
 - [**Networking**](#Networking)
   - [IPV4](#IPV4)
   - [IPV6](#IPV6)
@@ -629,14 +629,15 @@ Flag:
 ```
 eg{3b68892a1ba21a26b9efd93f8d8c2fb1}
 ```
----------------------------------------------------------------------------
-## OSINT
+<!-- ---------------------------------------------------------------------------
+ ## OSINT
 ### Farewell
 ### Broken Man
 ### Octopus
 ### Oldest Historical Tree
 ### Thirsty
 ### SixSenses
+-->
 ---------------------------------------------------------------------------
 ## Networking
 ### [IPV4]  
@@ -738,5 +739,34 @@ From the file given, it says `CUT FIRST 3 WORDS`,`0F`,`1LLUS1ON_`. In the YouTub
 EG{1LLUSION_OF_M1ND}
 ```  
 
-### MysteryBunny
+### [MysteryBunny]  
+![MysteryBunnyQues](https://github.com/mzahiruliman/EliteGhost-CTF-2023/blob/main/MysteryBunny/MysteryBunny.png?raw=true)  
+
+|Files|
+|-----|
+|[bunny.pdf](https://github.com/mzahiruliman/EliteGhost-CTF-2023/raw/main/MysteryBunny/bunny.pdf)|
+|[decode.pdf](https://github.com/mzahiruliman/EliteGhost-CTF-2023/raw/main/MysteryBunny/decode.pdf)|
+|[secretkey.jpg](https://github.com/mzahiruliman/EliteGhost-CTF-2023/raw/main/MysteryBunny/secretkey.jpg)|  
+
+Arrange the contents in `decode.jpg` and sort according to its country sequence and number and you will get the sequence below:  
+
+```
+tahniah               (Arab)
+123               (1) (Japan)
+huj               (2) (Japan)
+lmao              (1) (China)
+oyaoya            (2) (China)
+spasipo               (Rusia)
+jjsksjjsjksjjksjj (1) (Korea)
+arigatou          (2) (Korea)
+```
+
+Combine everything and you will get:  
+```
+tahniah123hujlmaooyaoyaspasipojjsksjjsjksjjksjjarigatou
+```
+Use the code to unlock `bunny.pdf` and you will get the flag:  
+```
+EG{BR1LL14NT_S3CR3T_COD3}
+```
 ---------------------------------------------------------------------------
