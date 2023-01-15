@@ -419,10 +419,35 @@ Decode the string using the same decoder and you will see the flag:
 EG{R0B0tS_W1tH_B64_Wa5_So_FXN_R1GHT}
 ```  
 
+### Error 404  
+![Error404Ques](https://github.com/mzahiruliman/EliteGhost-CTF-2023/blob/main/Error404/Error404.png?raw=true)  
 
+Hint: No hint.  
 
-### Error 404
-### TutTut
+I tried the files given, but all of them were not the flag. but then I realized that the header of the table is also interactive:  
+![1st](https://github.com/mzahiruliman/EliteGhost-CTF-2023/blob/main/Error404/1st.png?raw=true)  
+
+I clicked Description and got this:  
+![2nd](https://github.com/mzahiruliman/EliteGhost-CTF-2023/blob/main/Error404/2nd.png?raw=true)  
+
+The I tried to decode the base64 strings 2 times using [Base64 Decoder](https://www.base64decode.org) and got the flag:  
+```  
+EG{JU57_K1DD1NG}  
+```  
+### TutTut  
+![TutTutQues](https://github.com/mzahiruliman/EliteGhost-CTF-2023/blob/main/TutTut/TutTut.png?raw=true)  
+
+File:  
+![morse](https://github.com/mzahiruliman/EliteGhost-CTF-2023/blob/main/TutTut/morsecode.png?raw=true)  
+
+Hint:  
+> Just follow the instructions! What number iv represents in exam?  
+
+The URL given in the picture is `eliteghost.tech/IV.html`. I tried to go to the link but the flag was not there. then I tried to change from `IV` to `....-` in the link so the new link will be `eliteghost.tecg/....-.html` and got the flag:  
+```
+EG{L34RN_M0RS3_C0D3}  
+```  
+
 ### Birthday
 ---------------------------------------------------------------------------
 ## Forensics
