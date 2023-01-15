@@ -448,7 +448,20 @@ The URL given in the picture is `eliteghost.tech/IV.html`. I tried to go to the 
 EG{L34RN_M0RS3_C0D3}  
 ```  
 
-### Birthday
+### Birthday  
+![bdayques](https://github.com/mzahiruliman/EliteGhost-CTF-2023/blob/main/Birthday/Birthday.png?raw=true)  
+
+|Files|
+|-----|
+|[present.zip](https://github.com/mzahiruliman/EliteGhost-CTF-2023/raw/main/Birthday/present.zip)|  
+
+To find when eliteghost.tech was created, go to [who.is](who.is) and paste the  url, you will see the date. Use the date 20221012 to unlock the zip file. You will get a picture in the file:  
+![damn](https://github.com/mzahiruliman/EliteGhost-CTF-2023/blob/main/Birthday/EliteGhost%20CTF%20HN2.png?raw=true)  
+If you zoom a little bit on top, you will get the flag:  
+```
+EG{H4PPY_N3W_Y34R_CTF_2023}
+```  
+
 ---------------------------------------------------------------------------
 ## Forensics
 ### Corrupted
