@@ -701,8 +701,32 @@ EG{1P_SUBN3TT1NG_1S_34SY}
 
 ---------------------------------------------------------------------------
 ## Misc
-### Hashcat
-### Mystery Code
+### [Hashcat]  
+![HashcatQues](https://github.com/mzahiruliman/EliteGhost-CTF-2023/blob/main/Hashcat/Hashcat.png?raw=true)  
+
+|Files|
+|-----|
+|[flag-meow.pdf](https://github.com/mzahiruliman/EliteGhost-CTF-2023/raw/main/Hashcat/flag-meow.pdf)| 
+|[oyen.png](https://github.com/mzahiruliman/EliteGhost-CTF-2023/raw/main/Hashcat/oyen.png)  
+
+Go to [MD5 Converter](https://www.conversion-tool.com/md5/) and take the hash to unlock the pdf file. You will get the flag:  
+```
+EG{3V3RY_F1L3_H4SH}
+```  
+
+
+### [Mystery Code]  
+![MCQues](https://github.com/mzahiruliman/EliteGhost-CTF-2023/blob/main/Mystery%20Code/Mystery%20Code.png?raw=true)  
+
+Files:  
+![code.jpg](https://github.com/mzahiruliman/EliteGhost-CTF-2023/blob/main/Mystery%20Code/code.jpg?raw=true)  
+![unknown.jpg](https://github.com/mzahiruliman/EliteGhost-CTF-2023/blob/main/Mystery%20Code/unknown.jpg?raw=true)  
+
+For this one, just follow the sequence of the colours on the keyboard and you will get the flag:  
+```
+EG{S3CR3T_C0D3}
+```  
+
 ### SuperBrain
 ### MysteryBunny
 ---------------------------------------------------------------------------
