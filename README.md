@@ -518,7 +518,57 @@ Combine those three and I got the flag:
 ```
 EG{R0B0T1C_1S_4W3S0M3}
 ```  
-### Broken Oyen
+### [Broken Oyen]  
+![BrokenOyenQues](https://github.com/mzahiruliman/EliteGhost-CTF-2023/blob/main/Broken%20Oyen/Broken%20Oyen.png?raw=true)  
+
+|Files|
+|-----|
+|[cat.zip](https://github.com/mzahiruliman/EliteGhost-CTF-2023/raw/main/Broken%20Oyen/cat.zip)|  
+
+Hint:  
+> - pass (----^%%%%)  
+> - 9 char 👍  
+
+Use [Aperisolve](aperisolve.com) to extract the data from `meow.jpg` and you will see the string as below:  
+```
+pass:
+~*t}{~'t(wx%t
+```  
+
+Decode it using [Rot47 Decoder](https://www.dcode.fr/rot-47-cipher) and you will get `OYENLOVEWHITE`. Use the code to unlock `meow.zip` (make sure the password in small letters) and you will get two files which are `oyen.txt` and `oyen.zip`. In `oyen.txt` it says:  
+```
+THE LAST THINGS I REMEMBER MY PASSWORD CONTAIN MY NAME SYMBOL AND NUMBER.
+```  
+So we know that the `name = oyen`. We still do not know about `symbol, number`, but the hint told that the password has 4 digits and 1 symbol. I have created a python code to create a custom `password.txt`.:  
+```
+f = open("password.txt","w")
+special = ["!","@","#","$","%","^","&","*","(",")"]
+for i in special:
+  for x in range(1000,10000):
+    f.write("oyen" + i + str(x) + "\n")
+f.close()
+```  
+Then I got a txt file with all the potential passcode to unlock `oyen.zip`. I opened my Kali Linux and use zip2john to brute force the password:  
+```
+zip2john oyen.zip > zip.hash  
+john --wordlist=/home/kali/Documents/password.txt zip.hash  
+```
+The password will appear: `oyen@2102`  
+Unzip `oyen.zip` with the password. There is a file called oyen.dat. When you run `file oyen.dat`, it is actually oyen,jpg. Run the code below:  
+```
+mv oyen.dat oyen.jpg  
+tail oyen.jpg  
+```  
+You will find a base64 string:  
+```
+SHlFN1pSam1ESTlURW1TTUpJOUNFR09MWjBTOQ==
+```  
+Decode according to this rotation: String to Base64 to ROT13 to Base64 to ROT13 and you will get the flag:  
+```
+EG{0Y3N_ST1LL_BR0K3N}
+```  
+
+
 ---------------------------------------------------------------------------
 ## Steganography
 ### CatMeow
