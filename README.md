@@ -570,8 +570,32 @@ EG{0Y3N_ST1LL_BR0K3N}
 
 ---------------------------------------------------------------------------
 ## Steganography
-### CatMeow
-### Mastery
+### [CatMeow]  
+![CatMeowQues](https://github.com/mzahiruliman/EliteGhost-CTF-2023/blob/main/CatMeow/CatMeow.png?raw=true)  
+
+Hint:  
+> - Vroom Vroom!  
+> - Looking for QR Code?  
+
+Based on the hint, if you look closely in the video, there is a QR code:  
+![QR](https://github.com/mzahiruliman/EliteGhost-CTF-2023/blob/main/CatMeow/QR.png?raw=true)  
+
+Scan the QR and you'll get the flag:  
+```
+EG{QR_C0D3_1S_P0W3RFULL}
+```  
+
+### [Mastery]  
+![MasteryQues](https://github.com/mzahiruliman/EliteGhost-CTF-2023/blob/main/Mastery/Mastery.png?raw=true)  
+
+Watch the video and you will se the flag:  
+![flag](https://github.com/mzahiruliman/EliteGhost-CTF-2023/blob/main/Mastery/flag.png?raw=true)  
+
+The flag:  
+```
+EG{H4PPY_N3W_Y34R}
+```
+
 ### Class
 ### GustaveCourbet
 ---------------------------------------------------------------------------
