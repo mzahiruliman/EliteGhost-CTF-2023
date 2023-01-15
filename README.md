@@ -473,7 +473,7 @@ EG{H4PPY_N3W_Y34R_CTF_2023}
 
 Hint: No hint.  
 
-change the file extension from pss to png and you will get the flag:  
+Change the file extension from pss to png and you will get the flag:  
 ```
 EG{F0R3NS1CS_1S_FUN}
 ```  
@@ -493,7 +493,31 @@ The audio contain morse code. Decode it using [Morse Code Adaptive Audio Decoder
 EG{SP3CT0GR4M_T0_T3XT}
 ```  
 
-### AutoBot
+### [AutoBot]  
+![Autobot](https://github.com/mzahiruliman/EliteGhost-CTF-2023/blob/main/Autobot/Autobot.png?raw=true)  
+
+|Files|
+|-----|
+|[flag.zip](https://github.com/mzahiruliman/EliteGhost-CTF-2023/raw/main/Autobot/flag.zip)|  
+
+Hint: No hint  
+
+After you extract the zip file, you will get 4 files. I tried to google image search the formula, and it seems that the formula is not useful. If you see the naming for the remaining 3 files, it seems like there are arrrangement to which will go first. So I looked at the file named `1_PR13_B01_BRKT_CAM.robotic` and used `Ctrl + F` to find the flag format, and I found:  
+```
+{\Ftxt.shx|b0|i0|c0;\C256;EG\{ R0B}
+```  
+I proceed with file named `2_FR07_H104.robotic` and used `Ctr; + F` to find `\` and found:  
+```
+{\Ftxt.shx|b0|i0|c0;\C256;0T1C_1S_}
+```  
+Next, search the same thing as the second file on the third file named `3_FR07_X101.robotic` and found:  
+```
+{\Ftxt.shx|b0|i0|c0;\C256;4W3S0M3\}}
+```  
+Combine those three and I got the flag:  
+```
+EG{R0B0T1C_1S_4W3S0M3}
+```  
 ### Broken Oyen
 ---------------------------------------------------------------------------
 ## Steganography
