@@ -596,8 +596,39 @@ The flag:
 EG{H4PPY_N3W_Y34R}
 ```
 
-### Class
-### GustaveCourbet
+### [Class]  
+![ClassQues](https://github.com/mzahiruliman/EliteGhost-CTF-2023/blob/main/Class/Class.png?raw=true)  
+
+File:  
+![Mastery](https://github.com/mzahiruliman/EliteGhost-CTF-2023/blob/main/Class/mastery-encoded.png?raw=true)  
+
+Hint:  
+> - Steghide!  
+> - Maybe try many services?  
+
+For this challenge, you just have to decode the picture with all the steganography online tools available until you find the [chosen one](https://www.pelock.com/products/steganography-online-codec) and input the password: `NOPASS`. You will get the flag:  
+```
+EG{m4st3ry_cl44s}
+```  
+
+### [GustaveCourbet]  
+![GC](https://github.com/mzahiruliman/EliteGhost-CTF-2023/blob/main/GustaveCourbet/GC.png?raw=true)  
+
+|Files|
+|-----|
+|[GustaveCourbet.png](https://github.com/mzahiruliman/EliteGhost-CTF-2023/raw/main/GustaveCourbet/Gustave_Courbet_-_Le_Desespere_1845.png)|
+|[Clue.zip](https://github.com/mzahiruliman/EliteGhost-CTF-2023/raw/main/GustaveCourbet/Clue.zip)|  
+
+Hint:  
+> Same as in Clue.zip  
+
+With the hint given, just follow the steps similar to this [video](https://drive.google.com/file/d/1yGnxoJODl0zSTXTNxAHY-qU-OShLcqGq/view) but with different images until you get this QR code:  
+![QR](https://github.com/mzahiruliman/EliteGhost-CTF-2023/blob/main/GustaveCourbet/QR.png?raw=true)  
+
+Flag:  
+```
+eg{3b68892a1ba21a26b9efd93f8d8c2fb1}
+```
 ---------------------------------------------------------------------------
 ## OSINT
 ### Farewell
