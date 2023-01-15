@@ -384,7 +384,7 @@ Use the key to unlock the protected admin-sign.pdf and there is the flag!:
 EG{WH01S_L00KUP_1S_34SY}
 ```  
 
-### Error 500  
+### [Error 500]  
 ![Error505Ques](https://github.com/mzahiruliman/EliteGhost-CTF-2023/blob/main/Error%20505/image_2023-01-14_190535209.png?raw=true)  
 
 Given in the question is the link to a website. Click the link. Inspect element (Ctrl + Shift + I) observe the script and you will find the flag:  
@@ -396,7 +396,7 @@ flag:
 EG{G1nZ_1s_H3r3}
 ```   
 
-### EVE  
+### [EVE]  
 ![EVEques](https://github.com/mzahiruliman/EliteGhost-CTF-2023/blob/main/EVE/EVE.png?raw=true)  
 
 Hint:  
@@ -419,7 +419,7 @@ Decode the string using the same decoder and you will see the flag:
 EG{R0B0tS_W1tH_B64_Wa5_So_FXN_R1GHT}
 ```  
 
-### Error 404  
+### [Error 404]  
 ![Error404Ques](https://github.com/mzahiruliman/EliteGhost-CTF-2023/blob/main/Error404/Error404.png?raw=true)  
 
 Hint: No hint.  
@@ -434,7 +434,7 @@ The I tried to decode the base64 strings 2 times using [Base64 Decoder](https://
 ```  
 EG{JU57_K1DD1NG}  
 ```  
-### TutTut  
+### [TutTut]  
 ![TutTutQues](https://github.com/mzahiruliman/EliteGhost-CTF-2023/blob/main/TutTut/TutTut.png?raw=true)  
 
 File:  
@@ -448,7 +448,7 @@ The URL given in the picture is `eliteghost.tech/IV.html`. I tried to go to the 
 EG{L34RN_M0RS3_C0D3}  
 ```  
 
-### Birthday  
+### [Birthday]  
 ![bdayques](https://github.com/mzahiruliman/EliteGhost-CTF-2023/blob/main/Birthday/Birthday.png?raw=true)  
 
 |Files|
@@ -464,8 +464,35 @@ EG{H4PPY_N3W_Y34R_CTF_2023}
 
 ---------------------------------------------------------------------------
 ## Forensics
-### Corrupted
-### Signal
+### [Corrupted]  
+![Corrupted](https://github.com/mzahiruliman/EliteGhost-CTF-2023/blob/main/Corrupted/Corrupted.png?raw=true)  
+
+|Files|
+|-----|
+|[currpoted.pss](https://github.com/mzahiruliman/EliteGhost-CTF-2023/raw/main/Corrupted/curropted.pss)|  
+
+Hint: No hint.  
+
+change the file extension from pss to png and you will get the flag:  
+```
+EG{F0R3NS1CS_1S_FUN}
+```  
+
+### [Signal]  
+![SignalQues](https://github.com/mzahiruliman/EliteGhost-CTF-2023/blob/main/Signal/Signal.png?raw=true)  
+
+|Files|
+|-----|
+|[Signal0xffffffff.wav](https://github.com/mzahiruliman/EliteGhost-CTF-2023/raw/main/Signal/Signal0xffffffff.wav)|  
+
+Hint:  
+> Ever heard about spectogram?
+
+The audio contain morse code. Decode it using [Morse Code Adaptive Audio Decoder](https://morsecode.world/international/decoder/audio-decoder-adaptive.html) and you will get the flag:  
+```
+EG{SP3CT0GR4M_T0_T3XT}
+```  
+
 ### AutoBot
 ### Broken Oyen
 ---------------------------------------------------------------------------
