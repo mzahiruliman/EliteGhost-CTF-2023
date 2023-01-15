@@ -554,7 +554,7 @@ zip2john oyen.zip > zip.hash
 john --wordlist=/home/kali/Documents/password.txt zip.hash  
 ```
 The password will appear: `oyen@2102`  
-Unzip `oyen.zip` with the password. There is a file called oyen.dat. When you run `file oyen.dat`, it is actually oyen,jpg. Run the code below:  
+Unzip `oyen.zip` with the password. There is a file called `oyen.dat`. When you run `file oyen.dat`, it is actually `oyen.jpg`. Run the code below:  
 ```
 mv oyen.dat oyen.jpg  
 tail oyen.jpg  
@@ -567,7 +567,6 @@ Decode according to this rotation: String to Base64 to ROT13 to Base64 to ROT13 
 ```
 EG{0Y3N_ST1LL_BR0K3N}
 ```  
-
 
 ---------------------------------------------------------------------------
 ## Steganography
