@@ -727,6 +727,16 @@ For this one, just follow the sequence of the colours on the keyboard and you wi
 EG{S3CR3T_C0D3}
 ```  
 
-### SuperBrain
+### [SuperBrain]  
+![SBQues](https://github.com/mzahiruliman/EliteGhost-CTF-2023/blob/main/SuperBrain/SuperBrain.png?raw=true)  
+
+File:  
+![stateofmind.jpg](https://github.com/mzahiruliman/EliteGhost-CTF-2023/blob/main/SuperBrain/stateofmind.jpg?raw=true)  
+
+From the file given, it says `CUT FIRST 3 WORDS`,`0F`,`1LLUS1ON_`. In the YouTube video, cut three words of the title and you will get `M1ND`. Combine everything an you will get the flag:  
+```
+EG{1LLUSION_OF_M1ND}
+```  
+
 ### MysteryBunny
 ---------------------------------------------------------------------------
