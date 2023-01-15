@@ -639,9 +639,66 @@ eg{3b68892a1ba21a26b9efd93f8d8c2fb1}
 ### SixSenses
 ---------------------------------------------------------------------------
 ## Networking
-### IPV4
-### IPV6
-### AirDream Network
+### [IPV4]  
+![IPV4Ques](https://github.com/mzahiruliman/EliteGhost-CTF-2023/blob/main/IPV4/IPV4.png?raw=true)  
+
+|Files|
+|-----|
+|[flaggg.pcapng](https://github.com/mzahiruliman/EliteGhost-CTF-2023/raw/main/IPV4/flaggg.pcapng)|   
+
+Fot this challenge, you will need to use Wireshark to open the file given. Once you are in the Wireshark, you will see the base64 strings in packet comments:  
+![pckt](https://github.com/mzahiruliman/EliteGhost-CTF-2023/blob/main/IPV4/Base64.png?raw=true)  
+
+Decode the string and you will get the flag:  
+```
+EG{W1R3SH4RK_1S_GR34T}
+```  
+
+### [IPV6]  
+![IPV6Ques](https://github.com/mzahiruliman/EliteGhost-CTF-2023/blob/main/IPV6/IPV6.png?raw=true)  
+
+|Files|
+|-----|
+|[flagx.pcapng](https://github.com/mzahiruliman/EliteGhost-CTF-2023/raw/main/IPV6/flagx.pcapng)|  
+
+Hint:  
+> Do not get tricked! Nobody care if you love wireshark!  
+
+Click [this](https://filext.com/online-file-viewer.html) and put the file given. You will see base64 strings:  
+```
+RUd7VEgxU18xU19USDNfQzBSUjNDVF9GTDRHfQ==
+```  
+Decode it and you will get the flag:  
+```
+EG{TH1S_1S_TH3_C0RR3CT_FL4G}
+```  
+
+### [AirDream Network]  
+![ADQues](https://github.com/mzahiruliman/EliteGhost-CTF-2023/blob/main/AirDream%20Network/AirDream.png?raw=true)  
+
+|Files|
+|-----|
+|[flag.zip](https://github.com/mzahiruliman/EliteGhost-CTF-2023/raw/main/AirDream%20Network/flag.zip)|  
+
+Hint:  
+> - Learn more about Subnetting! Don't just use calculator or online tools! Do it Manually! Understand?
+> - Amount of Subnets = Subnets Bits ? Hosts = Usable Hosts? Fun fact: In youtube, there's a 1.1M views video where the Ip Add and Subnets Mask given is the same! With the solution that u need!
+> - Most common mistake is where people taught subnets mask is subnets. Also, amount of subnets bits is really simple. Maybe refer back the video that got mentioned on the last clue?  
+
+In the question, there a link that shows the format of the password for the zip file:
+```
+AUExYo0x45FFghijkWW1-"IP"-"CLASS"-"AMOUNT OF SUBNETS"-"SUBNETS"-"HOSTS"
+```  
+
+After looking for a YouTube video with 1.1M views, I finally found [one](https://youtu.be/uyRtYUg6bnw)! From the video, you will identify most of the things needed for the password until you get:  
+```  
+AUExYo0x45FFghijkWW1-192.168.1.0-C-4-16-14
+```  
+Use it to unlock the zip file and you will get base64 strings. Decode it and you will get the flag:  
+```
+EG{1P_SUBN3TT1NG_1S_34SY}
+```  
+
 ---------------------------------------------------------------------------
 ## Misc
 ### Hashcat
