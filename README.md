@@ -2,7 +2,7 @@
 # __EliteGhost-CTF-2023__  
 ---------------------------------------------------------------------------
 
-EGCTF2023 is a puzzle-based, three-days Capture The Flag (CTF) challenge consists of 50 questions from multiple categories, organized by a community called Elite Ghost. This repository is about providing writeups on challenges that have been done by me (@BiskutIkatTepi)  
+EGCTF2023 is a puzzle-based, three-days Capture The Flag (CTF) challenge consists of 50 questions from multiple categories, organized by a community called Elite Ghost. This repository is about providing writeups on challenges that have been done by me.
 
 In this event, I managed to get 4th place. I have learned a lot during this event and would like to join other CTF challenges in the future.  
 
